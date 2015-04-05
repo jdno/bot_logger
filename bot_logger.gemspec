@@ -9,13 +9,12 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jan David"]
   spec.email         = ["jandavid@awesometechnology.de"]
 
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
-  end
-
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q(Simple logging facility for Ruby bots in The AI Games' challenges)
+  spec.description   = <<-EOF
+    This library provides a simple logging facility for Ruby bots in the AI challenges hosted by The AI Games. It
+    offers multiple log levels, and outputs the logs in a meaningful format for easier debugging or optimizing.
+  EOF
+  spec.homepage      = "https://github.com/jdno/bot_logger"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
